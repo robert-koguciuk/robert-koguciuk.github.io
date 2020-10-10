@@ -1,77 +1,54 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <style>
 body {background-color: powderblue;}
 td {text-align: left;}
+td.time {text-align: right;}
 </style>
 </head>
 <body>
-
 <table>
 <tr>
-<td><a href="20200919.html">Poprzedni</a></td>
-<td><a href="20200921.html">Następny</a></td>
+<td><a href="20200919.html" id="prev">Poprzedni</a></td>
+<td><a href="20200921.html" id="next">Następny</a></td>
 </tr>
 </table>
-
-<div><h2>Niedziela, 20.09.2020</h2></div>
-
-
+<div><h2 id="today">Niedziela, 20 września 2020</h2></div>
 <div>
 <table>
-<tr><td>Początek dnia:</td><td>9:30</td><td>Koniec dnia:</td><td>0:30</td></tr>
+<tr><td>Początek dnia:</td><td>9:15</td><td>Koniec dnia:</td><td></td></tr>
 </table>
 </div>
+
 <br>
-
 <div>
-<table id="menu" border="1">
-<tr><th>Miejsce</th><th>Godzina</th><th>Posiłek</th><th>Opis</th><th>Zdjęcie</th></tr>
-
-<tr>
-<td>Dom</td>
-<td>9:59</td>
-<td>Śniadanie</td>
-<td>Kanapki z kiełbasą i pomidorem</td>
-<td> <a href="pics/IMG_20200920_095950_resized_20200923_073941679.jpg">
-<img src="pics/IMG_20200920_095950_resized_20200923_073941679.jpg" width=64 height=64></a>
-</td>
-</tr>
-
-<tr>
-<td rowspan=2>U rodziców</td>
-<td>15:04</td>
-<td>Obiad</td>
-<td>Rosół</td>
-<td> <a href="pics/IMG_20200920_150452_resized_20200923_073940734.jpg">
-<img src="pics/IMG_20200920_150452_resized_20200923_073940734.jpg" width=64 height=64></a>
-</td>
-</tr>
-
-<tr>
-<td>15:23</td>
-<td>Obiad</td>
-<td>Drugie danie</td>
-<td> <a href="pics/IMG_20200920_152328_resized_20200923_073940534.jpg">
-<img src="pics/IMG_20200920_152328_resized_20200923_073940534.jpg" width=64 height=64></a>
-</td>
-</tr>
-
-<tr>
-<td>Dom</td>
-<td>20:17</td>
-<td>Kolacja</td>
-<td>Fasolka, pomidor</td>
-<td> <a href="pics/IMG_20200920_201719_resized_20200923_073941291.jpg">
-<img src="pics/IMG_20200920_201719_resized_20200923_073941291.jpg" width=64 height=64></a>
-</td>
-</tr>
-
-</table>
+<table border="1" id="meals">
+<tr><th>Miejsce</th><th>Godzina</th><th>Rodzaj</th><th>Opis</th><th>Zdjęcie</th></tr>
+<tr class="meal"><td class="site" rowspan="0">Dom</td>
+<td align="right" class="time">9:59:50</td>
+<td class="type">Śniadanie</td>
+<td class="desc">Kanapki z pastą z ciecierzycy i pomidorem</td>
+<td><a class="pic" href="pics/IMG_20200920_095950_resized_20200923_073941679.jpg"><img height="64" src="pics/IMG_20200920_095950_resized_20200923_073941679.jpg" width="64"/></a></td>
+</tr><tr class="meal">
+<td align="right" class="time">15:04:52</td>
+<td class="type">Obiad</td>
+<td class="desc">Rosół</td>
+<td><a class="pic" href="pics/IMG_20200920_150452_resized_20200923_073940734.jpg"><img height="64" src="pics/IMG_20200920_150452_resized_20200923_073940734.jpg" width="64"/></a></td>
+</tr><tr class="meal">
+<td align="right" class="time">15:23:28</td>
+<td class="type">Obiad</td>
+<td class="desc">Kotlet schabowy, kiszona kapusta, ziemniaki</td>
+<td><a class="pic" href="pics/IMG_20200920_152328_resized_20200923_073940534.jpg"><img height="64" src="pics/IMG_20200920_152328_resized_20200923_073940534.jpg" width="64"/></a></td>
+</tr><tr class="meal">
+<td align="right" class="time">20:17:19</td>
+<td class="type">Kolacja</td>
+<td class="desc">Fasolka, pomidory</td>
+<td><a class="pic" href="pics/IMG_20200920_201719_resized_20200923_073941291.jpg"><img height="64" src="pics/IMG_20200920_201719_resized_20200923_073941291.jpg" width="64"/></a></td>
+</tr></table>
 </div>
-
 <br><div><a href="index.html">Powrót</a></div>
+</br></br>
 
-</body>
-</html>
+</body></html>
